@@ -6,6 +6,8 @@ import NavBar from './Components/NavBar/NavBar'
 import Home from './Components/Home/Home'
 import HostHome from './Components/Host/HostHome';
 import LoginPage from './Components/LoginPage';
+import FullAbode from './Components/FullAbode/FullAbode';
+
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/host/home" component={HostHome} />
             <Route exact path="/login" component={LoginPage} />
+            <Route exact path="/abode/:abodeId" component={FullAbode} />
+
       </div>
     </Router>
   );
